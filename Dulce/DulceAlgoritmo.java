@@ -28,11 +28,11 @@ public class DulceAlgoritmo {
         int cajasLlenas = nBarras / BARRAS_POR_CAJA;
         int barrasSobrantes = nBarras % BARRAS_POR_CAJA;
 
-        // Resultados
-        System.out.printf("Costo total de producción: $%.2f%n", costoTotalProduccion);
-        System.out.printf("Precio de venta por barra: $%.2f%n", precioVentaPorBarra);
-        System.out.printf("Ingreso total del día: $%.2f%n", ingresoTotal);
-        System.out.printf("Cajas llenas: %d%n", cajasLlenas);
-        System.out.printf("Barras sobrantes: %d%n", barrasSobrantes);
+        // Resultados con println
+        System.out.println("Costo total de producción: $" + String.format("%.2f", costoTotalProduccion));
+        System.out.println("Precio de venta por barra: $" + String.format("%.2f", precioVentaPorBarra));
+        System.out.println("Ingreso total del día: $" + String.format("%.2f", ingresoTotal));
+        System.out.println("Cajas llenas: " + cajasLlenas);
+        System.out.println("Barras sobrantes: " + barrasSobrantes);
     }
 }
