@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DulceAlgoritmo {
+public class DulceAlgoritmo1 {
     public static void main(String[] args) {
         // Definimos los costos y parámetros
         final double COSTO_MATERIA_PRIMA = 2.50;
@@ -12,6 +12,14 @@ public class DulceAlgoritmo {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el número de barras producidas hoy: ");
         int nBarras = scanner.nextInt();
+
+        // Comprobación de entrada válida
+        if (nBarras <= 0) {
+            System.out.println("El número de barras producidas debe ser mayor que 0.");
+            scanner.close();
+            return;
+        }
+
         scanner.close();
 
         // Cálculo del costo total de producción por barra
@@ -29,9 +37,9 @@ public class DulceAlgoritmo {
         int barrasSobrantes = nBarras % BARRAS_POR_CAJA;
 
         // Resultados con println
-        System.out.println("Costo total de producción: $" + costoTotalProduccion);
-        System.out.println("Precio de venta por barra: $" + precioVentaPorBarra);
-        System.out.println("Ingreso total del día: $" + ingresoTotal);
+        System.out.println("Costo total de producción: $" + String.format("%.2f", costoTotalProduccion));
+        System.out.println("Precio de venta por barra: $" + String.format("%.2f", precioVentaPorBarra));
+        System.out.println("Ingreso total del día: $" + String.format("%.2f", ingresoTotal));
         System.out.println("Cajas llenas: " + cajasLlenas);
         System.out.println("Barras sobrantes: " + barrasSobrantes);
     }
