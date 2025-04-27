@@ -1,11 +1,11 @@
-public class Circulo {
+public class Circulo1 {
  
     // Atributos
     private double radio;
  
     // Constructor de la clase:Nos permite inicializar la clase
     // Se llama igual que la clase
-    public Circulo(double radio) {
+    public Circulo1(double radio) {
         this.radio = radio; // This: es una autoreferencia al atributo de la clase
     }
  
@@ -18,4 +18,3 @@ public class Circulo {
         return Math.PI * (radio * radio); // Math.PI * Math.pow (radio,2)
     }
 }
- 
