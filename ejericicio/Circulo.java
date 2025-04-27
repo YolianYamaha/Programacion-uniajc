@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Circulo {
+    public Circulo(double r) {
+        //TODO Auto-generated constructor stub
+    }
+
     public static void main(String[] args) {
         // Crear un objeto Scanner para leer la entrada del usuario
         Scanner scanner = new Scanner(System.in);
@@ -21,5 +25,15 @@ public class Circulo {
 
         // Cerrar el Scanner
         scanner.close();
+    }
+
+    public String calcularArea() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularArea'");
+    }
+
+    public String calcularPerimetro() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularPerimetro'");
     }
 }
